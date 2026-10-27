@@ -1,4 +1,4 @@
-# lorentz-sinkhorn
+# Lorentz-Sinkhorn Algorithm
 
 Entropic optimal transport under a causality constraint, solved with the Sinkhorn algorithm.
 Mass may only move along a causal relation (on Minkowski space or a directed acyclic graph),
