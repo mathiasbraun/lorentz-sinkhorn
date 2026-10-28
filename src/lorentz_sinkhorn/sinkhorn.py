@@ -35,8 +35,8 @@ def sinkhorn(a, b, C, eps, max_iter=10_000, tol=1e-9):
     v = np.ones_like(b)
 
     for n_iter in range(1, max_iter + 1):
-        u = a / (K @ v)           # match row sums to a
-        v = b / (K.T @ u)         # match column sums to b
+        u = a / (K @ v)           # Match row sums to a
+        v = b / (K.T @ u)         # Match column sums to b
 
         P = u[:, None] * K * v[None, :]
         err = np.abs(P.sum(axis=1) - a).sum()

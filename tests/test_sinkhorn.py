@@ -13,7 +13,7 @@ def make_problem(n=5, m=6, seed=0):
     y = rng.normal(size=(m, 2))
     a = np.full(n, 1 / n)
     b = np.full(m, 1 / m)
-    C = ot.dist(x, y)            # squared Euclidean distances
+    C = ot.dist(x, y)            # Squared Euclidean distances
     return a, b, C
 
 
